@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@drawable/bg_main_gradient_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сапёр 5×5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#66000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Карточка с игровым полем -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_board"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <GridLayout
+            android:id="@+id/gridField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:rowCount="5" />
+    </LinearLayout>
+
+    <!-- Чат сапёра (лог ходов) в карточке -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_chat"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvChatTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Чат сапёра"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#5A2EA6"
+            android:layout_marginBottom="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#225A2EA6"
+            android:layout_marginBottom="4dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="vertical">
+
+            <TextView
+                android:id="@+id/tvChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:text="Здесь появятся сообщения сапёра..."
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="Новая игра"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_main_button"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
