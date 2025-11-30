@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#929292">
+
+    <ImageView
+        android:id="@+id/imageFlagAuto"
+        android:layout_width="371dp"
+        android:layout_height="219dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/us" />
+
+    <ImageView
+        android:id="@+id/imageFlagGlide"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:visibility="gone" />
+
+</FrameLayout>
