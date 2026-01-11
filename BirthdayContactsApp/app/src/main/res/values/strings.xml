@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BirthdayContactsApp</string>
+    <string name="december_birthdays_title">Контакты с ДР в декабре</string>
+    <string name="birthday_label">ДР: %1$s</string>
+    <string name="permissions_required">Разрешения необходимы</string>
+    <string name="contact_added">Контакт %1$s добавлен</string>
+    <string name="contacts_changed">Контакты изменились - обновляем список</string>
+</resources>
