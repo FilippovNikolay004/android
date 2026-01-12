@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Murzik Feeder</string>
+    <string name="feed_button">Нагодувати Мурзика</string>
+    <string name="feed_again_button">Нагодувати ще раз</string>
+    <string name="status_format">Життів: %1$d | Часу: %2$d с</string>
+    <string name="message_idle">Мурзик голодний. Натисни кнопку, щоб нагодувати.</string>
+    <string name="message_feeding_start">Готуємо супер-преміум-корм з тунцем і креветками…</string>
+    <string name="feed_success">Мурзик наївся. Дякую!</string>
+    <string name="death_message">Мурзик пішов у котячу Вальгаллу</string>
+    <string name="meow_log">МЯЯЯЯУ!!!</string>
+
+    <string-array name="feed_messages">
+        <item>Мурзик дивиться голодними очима…</item>
+        <item>Мурзик почав гризти тапок…</item>
+        <item>Мурзик точить кігті об диван… Життів: %1$d</item>
+    </string-array>
+</resources>
